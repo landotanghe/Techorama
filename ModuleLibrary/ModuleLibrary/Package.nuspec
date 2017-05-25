@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>lando.tanghe.techorama.extensibility.ModuleLibrary</id>
+    <version>1.0.0</version>
+    <authors>lando</authors>
+    <owners>lando</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tryout of 'Exposing an extensibility API' demo by M. Castro on Techorama</description>
+    <releaseNotes>Setup</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+  </metadata>
+</package>
