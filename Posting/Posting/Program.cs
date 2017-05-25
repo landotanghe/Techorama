@@ -9,11 +9,15 @@ namespace Posting
     {
         static void Main(string[] args)
         {
-            string originalInput = "hello world";
+            string originalInput = "she squeezed his cheeks";
             Console.WriteLine($"originalInput: {originalInput}");
 
             var modules = new List<IModule<PreProcessEvent>>();
             modules.Add(new LoudPostingModule());
+
+            var profanityModulePath = "ProfanityPostingModule.ProfanityFilterModule,ProfanityPostingModule";
+            var profanityModule = Activator.CreateInstance(Type.GetType(profanityModulePath)) as IModule<PreProcessEvent>;
+            modules.Add(profanityModule);
 
             var preprocessing = new PreProcessEvent();
             foreach (var module in modules)
